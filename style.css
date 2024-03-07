@@ -1,0 +1,133 @@
+/* :root {
+  --mainbg: #161616;
+  --maintext: #e5dffa69;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #330087, #4c0071);
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#mainLogo {
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+#songDetails{
+  font-family: "Delicious Handrawn", cursive;
+  display: flex;
+  font-weight: 100;
+  bottom: 150px;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(0, 255, 106); */
+}
+
+#songController {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000067;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+
+
+  input {
+    margin-top: 20px;
+    width: 80%;
+    margin: 30px 0px;
+
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  box-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  li{
+    margin: 0px 25px;
+    height: 60px;
+  }
+  
+  /* play BG */
+  div{ 
+    width: 130px;
+    height: 135px;
+    background-color: #8800ff ;
+    color: aqua;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    bottom: -65px;
+  }
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #8800ff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/* #songController > ul li:nth-child(2) {
+  background-color: blueviolet;
+  border-radius: 100px;
+  height: 170px;
+  width: 160px;
+  position: relative;
+  bottom: -85px;
+  text-align: center;
+  box-icon{
+    margin-top: 15px;
+    width: 5rem;
+    height: 5rem;
+  }
+} */
